@@ -1,0 +1,25 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^$ /g.php [L]
+RewriteRule ^rotate/([a-zA-Z0-9]*)/([a-zA-Z0-9]*)/$ /action.php?action=rotate&dir=$1&id=$2 [L]
+RewriteRule ^thumb/([a-zA-Z0-9]*)/([a-zA-Z0-9]*)/$ /action.php?action=thumb&side=$1&id=$2 [L]
+RewriteRule ^view/([a-zA-Z0-9]*)/$ /g.php?page=$1 [L]
+RewriteRule ^view/([a-zA-Z0-9]*)$ /g.php?id=$1 [L]
+RewriteRule ^comments/([a-zA-Z0-9]*)/$ /comments.php?pid=$1 [L]
+RewriteRule ^comments/([a-zA-Z0-9]*)$ /comments.php?pid=$1 [L]
+RewriteRule ^debug/([a-zA-Z0-9]*)/$ /g.php?page=$1&debug=true [L]
+RewriteRule ^blah$ /g.php?blah=true&m=The+requested+photo+doesn\'t+exist. [L]
+RewriteRule ^dead$ /g.php?blah=true&m=The+requested+photo+has+been+deleted. [L]
+RewriteRule ^u/$ /target.php?slash=yes [L]
+RewriteRule ^u$ /target.php [L]
+RewriteRule ^upload$ /upload.php [L]
+RewriteRule ^user/([a-zA-Z0-9]*)$ /g.php?user=$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+AddType application/python py
+AddType application/x-httpd-python py
