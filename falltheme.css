@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* Q.Parkr.Me CSS: Fall Theme */
+
+html, body {
+	height:100%;
+	width:100%;
+	margin:0px;
+	padding:0px;
+	background-color:#820A0A;
+	color:#CC4A35;
+	text-shadow: #CC4A35 -1px -1px 2px;
+	font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+}
+
+div#container {
+	margin:0 auto;
+}
+
+div#bgimg {
+	background-image:url("bg.png");
+	background-repeat:none;
+	/* position:relative;
+	top:-650px;
+	left:-91px; */
+	width: 108px;
+	height: 600px;
+	float:left;
+}
+
+div#header {
+	font-size:48px;
+	text-align:center;
+	display:none;
+}
+
+div#image-container {
+	background-color:#0A4982;
+	margin: 0 auto;
+}
+
+div#image-container img {
+	position:relative;
+	border:#0A4982 3px;
+}
+
+div#caption {
+	text-align:center;
+	font-size:30px;
+	color:#A8A206;
+}
+
+div#footer {
+	text-align:center;
+}
+
+a, a:link, a:visited, a:active {
+	color:#226970;
+	text-decoration:none;
+}
+
+a:hover {
+	/* color:#308DC4; */
+	color:#4EA689;
+	text-decoration:none;
+}
+
+@media handheld and (max-device-width: 480px){
+	body{}
+	div#header{display:block;}
+	div#bgimg{display:none;}
+	img{height:auto;max-width:100%;}
+}
+
+@media handheld and (-webkit-min-device-pixel-ratio: 2){
+	body{}
+	div#bgimg{display:none;}
+	div#header{display:block;}
+	img{height:auto;max-width:100%;}
+}
