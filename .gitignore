@@ -1,2 +1,5 @@
 db.inc.php
 error_log
+imageupload/*.jpg
+imageupload/*.png
+imageupload/*.gif
