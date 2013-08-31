@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* Q.Parkr.Me iPhone CSS */
+
+html, body {
+	height:100%;
+	width:100%;
+	margin:0px;
+	padding:0px;
+	background-color:#0C141C;
+	color:#308DC4;
+	text-shadow: #0A4982 -1px -1px 2px;
+	font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+}
+
+div{
+  clear:both!important;
+  display:block!important;
+  width:100%!important;
+  float:none!important;
+  margin:0!important;
+  padding:0!important;
+}
+
+div#container {
+	margin:0 auto;
+}
+
+div#header {
+	font-size:48px;
+	text-align:center;
+}
+
+div#image-container {
+	background-color:#0A4982;
+	width:auto;
+}
+
+div#image-container img {
+	position:relative;
+	top:0px;
+	left:0px;
+}
+
+div#bgimg{display:none;}
+
+div#footer {
+	text-align:center;
+}
+
+a, a:visited, a:active {
+	color:#ACC9FA;
+	text-decoration:none;
+}
+
+a:hover {
+	/* color:#308DC4; */
+	/*color:#ACC9FA;
+	text-decoration:none;*/
+	font-weight:bold;
+}
